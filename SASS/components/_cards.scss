@@ -1,0 +1,53 @@
+.card1 {
+    @include column;
+    border-radius: 15px;
+    width: 340px;
+    height: 251px;
+    background: white;
+    & img {
+      width: 100%;
+      border-radius: 15px 15px 0px 0px;
+      height: 189px;
+      object-fit: cover;
+    }
+    & a {
+      height: 251px;
+    }
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    & a {
+      text-decoration: none;
+    }
+  }
+  .deuxieme {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .premier {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .nom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: roboto;
+    color: black;
+    margin-left: 25px;
+    & p {
+      margin: 0;
+      font-size: 17px;
+      font-weight: 300;
+    }
+    & h3 {
+      margin: 0;
+      margin-top: 12px;
+      font-size: 18px;
+    }
+  }

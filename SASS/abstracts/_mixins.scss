@@ -1,0 +1,18 @@
+@mixin color-white{
+    color: white;
+}
+@mixin flexMid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin row{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+@mixin column{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

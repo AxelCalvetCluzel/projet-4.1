@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+
+@import
+  'abstracts/variables',
+  'abstracts/fonctions',
+  'abstracts/mixins';
+
+// 2. Vendors
+ 
+// 3. Base stuff
+@import
+'base/fonctionnement',
+'base/restaurants',
+'base/titre',
+'base/titrepagerestaurant',
+'base/superposition';
+
+// 4. Layout-related sections
+@import
+  'layout/header',
+  'layout/footer';
+
+// 5. Components
+@import
+  'components/coeur',
+  'components/cards',
+  'components/cardmenu';
+
+
+// 6. Page-specific styles
+@import
+  'pages/home';
+
+// 7. Themes

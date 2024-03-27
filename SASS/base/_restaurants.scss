@@ -1,0 +1,85 @@
+.restaurants {
+  @include column;
+  background: var(--Background, #f6f6f6);
+  height: 1226px;
+  & h2 {
+    margin: 58px 80px 16px 20px;
+    font-family: Roboto;
+    width: 275px;
+  }
+}
+@media (min-width: 704px) {
+  .restaurants {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 28px;
+    & .card {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-bottom: 30px;
+    }
+    & h2{
+      margin: 0px 180px;
+      width: auto;
+    }
+  }
+}
+@media (min-width: 1050px) {
+  .restaurants {
+    & .card {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+    & .card1 {
+      width: 490px;
+    }
+    & .deuxieme {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    & .premier {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    & .coeur {
+      margin-left: 430px;
+    }
+    & h2{
+      width: 1050px;
+      margin-left: 200px;
+    }
+  }
+}
+@media (min-width: 1180px) {
+  .restaurants {
+   
+    & .card{
+      display: flex;
+      gap: 50px ;
+      flex-direction: column;
+      width: 100%;
+    }
+    & .deuxieme {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 100px;
+      margin: 0px 180px;
+    }
+    & .premier {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 100px;
+      margin: 0px 180px;
+    }
+    & .coeur {
+      margin-left: 430px;
+    }
+  }
+}
