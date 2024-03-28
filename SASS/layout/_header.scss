@@ -1,13 +1,16 @@
-body{
+body {
     margin: 0;
 }
-header{
+
+header {
     @include column;
-    & img{
+
+    & img {
         width: 162px;
         height: 44px;
     }
-    .location{
+
+    .location {
         flex-direction: row;
         gap: 17px;
         background: var(--Grey-2, #EAEAEA);
@@ -15,18 +18,39 @@ header{
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         @include flexMid;
     }
-    .logo{
+
+    .logo {
         height: 36px;
     }
-    
+
+    &.menuresto {
+        padding-left: 30px;
+        flex-direction: row;
+
+    }
+
+    .fa-arrow-left {
+        font-size: 18px;
+
+    }
 }
-.header{
+
+.header {
     padding: 14px 89px 13px 89px;
     display: flex;
-    justify-content: center;}
+    justify-content: center;
 
-.headimg{
-    height: 275px;
-    width: 375px;
-    
+    &2 {
+        width: 100%;
+        padding: 14px 0px 13px 0px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.headimg {
+    max-height: 540px;
+    width: 100%;
+    object-fit: cover;
+
 }

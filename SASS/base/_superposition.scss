@@ -1,7 +1,13 @@
 .arriere {
+    @include column;
 
-    & .carte{
+    & .carte {
         position: relative;
         margin-top: -55px;
+        width: 100%;
+
+        @media (min-width: 1024px) {
+            width: 1055px;
+        }
     }
 }

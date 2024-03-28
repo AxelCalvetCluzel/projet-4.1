@@ -208,9 +208,20 @@
   margin-top: 0;
 }
 
+.arriere {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 .arriere .carte {
   position: relative;
   margin-top: -55px;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .arriere .carte {
+    width: 1055px;
+  }
 }
 
 body {
@@ -239,16 +250,30 @@ header .location {
 header .logo {
   height: 36px;
 }
+header.menuresto {
+  padding-left: 30px;
+  flex-direction: row;
+}
+header .fa-arrow-left {
+  font-size: 18px;
+}
 
 .header {
   padding: 14px 89px 13px 89px;
   display: flex;
   justify-content: center;
 }
+.header2 {
+  width: 100%;
+  padding: 14px 0px 13px 0px;
+  display: flex;
+  justify-content: center;
+}
 
 .headimg {
-  height: 275px;
-  width: 375px;
+  max-height: 540px;
+  width: 100%;
+  object-fit: cover;
 }
 
 footer {
@@ -367,6 +392,24 @@ i.fa-solid.fa-heart:not(:hover) {
 .card1 a {
   height: 251px;
 }
+.card1 .badge {
+  width: 80px;
+  height: 29px;
+  background: var(--Green, #99E2D0);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 12px 0px 395px;
+  font-family: Roboto;
+  font-size: 14px;
+  color: var(--Green-Font, #008766);
+}
+@media (max-width: 1049.5px) {
+  .card1 .badge {
+    margin: 15px 12px 0px 250px;
+  }
+}
 
 .card {
   display: flex;
@@ -420,31 +463,82 @@ i.fa-solid.fa-heart:not(:hover) {
 
 .cardmenu {
   display: flex;
-  height: 69px;
+  height: 65px;
   width: 349px;
   border-radius: 15px;
   background: var(--White, #fff);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
   align-items: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .cardmenu a {
   text-decoration: none;
   color: black;
-  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  padding: 15px 0px 15px 15px;
+  align-items: center;
+  text-overflow: ellipsis;
 }
-.cardmenu p {
+.cardmenu .repas {
   margin: 0;
+  text-overflow: ellipsis;
+  width: 287px;
 }
 .cardmenu h3 {
   margin: 0;
+  text-overflow: ellipsis;
+  width: 287px;
+  overflow: hidden;
+}
+@media (min-width: 1024px) {
+  .cardmenu h3 {
+    overflow: unset;
+  }
+}
+.cardmenu p {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+@media (min-width: 1024px) {
+  .cardmenu p {
+    overflow: unset;
+  }
 }
 .cardmenu .description {
-  display: flex;
-  flex-direction: column;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   width: 287px;
+}
+@media (min-width: 1024px) {
+  .cardmenu .description {
+    width: 572px;
+    text-overflow: ellipsis;
+  }
+}
+.cardmenu .prix {
+  display: flex;
+  align-items: flex-end;
+  padding: 25px 15px 0px 5px;
+  text-overflow: ellipsis;
+}
+.cardmenu .check {
+  display: flex;
+  align-items: center;
+  text-overflow: ellipsis;
+  width: 110px;
+  margin-left: 3px;
+  transition: margin-left 1000ms ease;
+}
+.cardmenu svg {
+  text-overflow: ellipsis;
+}
+@media (min-width: 1024px) {
+  .cardmenu {
+    width: 634px;
+  }
 }
 
 .entrées {
@@ -464,6 +558,7 @@ i.fa-solid.fa-heart:not(:hover) {
 
 .prix p {
   margin: 0;
+  text-overflow: ellipsis;
 }
 
 .bouttonCMD {
@@ -478,6 +573,22 @@ i.fa-solid.fa-heart:not(:hover) {
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 40px;
+}
+
+.cardmenu:hover .check {
+  margin-left: -56px;
+  transition: margin-left 1000ms ease;
+  text-overflow: ellipsis;
+}
+.cardmenu:hover h3 {
+  margin: 0;
+  text-overflow: ellipsis;
+  width: 200px;
+}
+.cardmenu:hover .repas {
+  text-overflow: ellipsis;
+  width: 200px;
+  margin: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

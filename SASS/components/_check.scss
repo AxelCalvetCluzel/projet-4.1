@@ -1,0 +1,21 @@
+.cardmenu {
+  &:hover {
+    & .check {
+      margin-left: -56px;
+      transition: margin-left 1000ms ease;
+      text-overflow: ellipsis;
+    }
+
+    & h3 {
+      margin: 0;
+      text-overflow: ellipsis;
+      width: 200px;
+    }
+
+    & .repas {
+      text-overflow: ellipsis;
+      width: 200px;
+      margin: 0;
+    }
+  }
+}
