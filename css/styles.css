@@ -206,6 +206,16 @@
 .titreresto .coeur {
   margin-top: 0;
 }
+@media (max-width: 374px) {
+  .titreresto .coeur {
+    margin-left: 276px;
+  }
+}
+@media (max-width: 374px) {
+  .titreresto {
+    width: 301px;
+  }
+}
 
 .arriere {
   display: flex;
@@ -255,6 +265,9 @@ header.menuresto {
 }
 header .fa-arrow-left {
   font-size: 18px;
+}
+header p {
+  font-family: roboto;
 }
 
 .header {
@@ -519,6 +532,16 @@ i.fa-solid.fa-heart:not(:hover) {
     text-overflow: ellipsis;
   }
 }
+@media (max-width: 374px) {
+  .cardmenu .description {
+    width: 247px;
+  }
+}
+@media (max-width: 374px) {
+  .cardmenu .description p {
+    font-size: 14px;
+  }
+}
 .cardmenu .prix {
   display: flex;
   align-items: flex-end;
@@ -539,6 +562,11 @@ i.fa-solid.fa-heart:not(:hover) {
 @media (min-width: 1024px) {
   .cardmenu {
     width: 634px;
+  }
+}
+@media (max-width: 374px) {
+  .cardmenu {
+    width: 309px;
   }
 }
 
@@ -568,16 +596,20 @@ i.fa-solid.fa-heart:not(:hover) {
   padding-bottom: 10px;
 }
 
-.category:nth-child(4) {
-  animation-delay: 3s;
-}
-
-.category:nth-child(2) {
+.category:nth-child(1) {
   animation-delay: 1s;
 }
 
-.category:nth-child(3) {
+.category:nth-child(2) {
   animation-delay: 2s;
+}
+
+.category:nth-child(3) {
+  animation-delay: 3s;
+}
+
+.category:nth-child(4) {
+  animation-delay: 4s;
 }
 
 @keyframes reveal {
@@ -622,6 +654,134 @@ i.fa-solid.fa-heart:not(:hover) {
   text-overflow: ellipsis;
   width: 200px;
   margin: 0;
+}
+
+.loader-container {
+  position: fixed;
+  background: #f1f1f1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 2s ease-in-out;
+  background: linear-gradient(to right, #FF79DA, #9356DC);
+  z-index: 1;
+  opacity: 1;
+  animation: loader 1s forwards;
+  animation-delay: 3s;
+}
+.loader-container .fa-solid {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  animation: chargement infinite 0.5s alternate;
+  font-size: 22px;
+  color: #9356DC;
+}
+.loader-container .d2 {
+  animation-delay: 0.2s;
+  color: #99E2D0;
+}
+.loader-container .d3 {
+  animation-delay: 0.4s;
+  color: white;
+}
+
+@keyframes chargement {
+  100% {
+    transform: translateY(-30px);
+  }
+  0% {
+    opacity: 0;
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@media (max-width: 374px) {
+  .imglanote {
+    max-height: 210px;
+  }
+  .headimg {
+    max-height: 210px;
+  }
+}
+@media (min-width: 375px) {
+  .imglanote {
+    max-height: 250px;
+  }
+  .headimg {
+    max-height: 250px;
+  }
+}
+@media (min-width: 425px) {
+  .imglanote {
+    max-height: 283px;
+  }
+  .headimg {
+    max-height: 283px;
+  }
+}
+@media (min-width: 600px) {
+  .imglanote {
+    max-height: 400px;
+  }
+  .headimg {
+    max-height: 400px;
+  }
+}
+@media (min-width: 768px) {
+  .imglanote {
+    max-height: 512px;
+  }
+  .headimg {
+    max-height: 512px;
+  }
+}
+@media (min-width: 1024px) {
+  .imglanote {
+    max-height: 540px;
+  }
+}
+@media (max-width: 374px) {
+  .card1 {
+    width: 295px;
+  }
+  .card1 .coeur {
+    margin-left: 245px;
+  }
+  .card1 .badge {
+    margin: 15px 12px 0px 210px;
+  }
+  .card1 .nom {
+    width: 295px;
+  }
+  .header {
+    padding: 14px 79px 13px 79px;
+  }
+  .restaurants h2 {
+    margin: 58px 32px 16px 12px;
+  }
+  .Fonctionnement h2 {
+    margin-left: 12px;
+    width: 308px;
+  }
+  .menu1 {
+    width: 280px;
+  }
+  .menu {
+    margin-left: 15px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

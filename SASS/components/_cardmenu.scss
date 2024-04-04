@@ -67,6 +67,16 @@
       text-overflow: ellipsis;
 
     }
+
+    @media (max-width: 374px) {
+      width: 247px;
+    }
+
+    & p {
+      @media (max-width: 374px) {
+        font-size: 14px;
+      }
+    }
   }
 
   & .prix {
@@ -92,6 +102,10 @@
   @media (min-width:1024px) {
     width: 634px;
 
+  }
+
+  @media (max-width: 374px) {
+    width: 309px;
   }
 }
 
@@ -125,16 +139,10 @@
 
 }
 
-.category:nth-child(4) {
-  animation-delay: 3s;
-}
-
-.category:nth-child(2) {
-  animation-delay: 1s;
-}
-
-.category:nth-child(3) {
-  animation-delay: 2s;
+@for $i from 1 through 4 {
+  .category:nth-child(#{$i}) {
+    animation-delay: #{$i}s;
+  }
 }
 
 @keyframes reveal {

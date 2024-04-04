@@ -1,0 +1,97 @@
+@media (max-width: 374px) {
+    .imglanote {
+        max-height: 210px;
+    }
+
+    .headimg {
+        max-height: 210px;
+    }
+}
+
+@media (min-width : 375px) {
+    .imglanote {
+        max-height: 250px;
+    }
+
+    .headimg {
+        max-height: 250px;
+    }
+}
+
+
+
+@media (min-width : 425px) {
+    .imglanote {
+        max-height: 283px;
+    }
+
+    .headimg {
+        max-height: 283px;
+    }
+}
+
+@media (min-width : 600px) {
+    .imglanote {
+        max-height: 400px;
+    }
+
+    .headimg {
+        max-height: 400px;
+    }
+}
+
+@media (min-width : 768px) {
+    .imglanote {
+        max-height: 512px;
+    }
+
+    .headimg {
+        max-height: 512px;
+    }
+}
+
+@media (min-width : 1024px) {
+    .imglanote {
+        max-height: 540px;
+    }
+}
+
+@media (max-width : 374px) {
+    .card1 {
+        width: 295px;
+
+        & .coeur {
+            margin-left: 245px;
+        }
+
+        & .badge {
+            margin: 15px 12px 0px 210px;
+        }
+
+        & .nom {
+            width: 295px;
+        }
+    }
+
+    .header {
+        padding: 14px 79px 13px 79px;
+    }
+
+    .restaurants h2 {
+        margin: 58px 32px 16px 12px
+    }
+
+    .Fonctionnement h2 {
+        margin-left: 12px;
+        width: 308px;
+    }
+
+    .menu1 {
+        width: 280px;
+    }
+
+    .menu {
+        margin-left: 15px;
+    }
+
+}

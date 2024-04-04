@@ -1,17 +1,20 @@
-@mixin color-white{
+@mixin color-white {
     color: white;
 }
-@mixin flexMid{
+
+@mixin flexMid {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-@mixin row{
+
+@mixin row {
     display: flex;
     align-items: center;
     flex-direction: row;
 }
-@mixin column{
+
+@mixin column {
     display: flex;
     align-items: center;
     flex-direction: column;

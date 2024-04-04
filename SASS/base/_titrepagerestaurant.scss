@@ -1,16 +1,25 @@
 .titreresto {
     width: 341px;
     height: 27px;
-    
-    & h1{
-    font-size: 28px;
-    font-family: Shrikhand;
-    font-weight: 400;
-    margin: 0;
-    display: flex;
-    align-items: center;
+
+    & h1 {
+        font-size: 28px;
+        font-family: Shrikhand;
+        font-weight: 400;
+        margin: 0;
+        display: flex;
+        align-items: center;
     }
-    & .coeur{
+
+    & .coeur {
         margin-top: 0;
+
+        @media (max-width: 374px) {
+            margin-left: 276px;
+        }
+    }
+
+    @media (max-width: 374px) {
+        width: 301px;
     }
 }
