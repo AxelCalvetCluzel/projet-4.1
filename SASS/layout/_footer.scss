@@ -7,7 +7,7 @@ footer {
     gap: 16px;
 
     & a {
-        @include color-white;
+        color: $color-white;
         display: flex;
         flex-direction: column;
         gap: 7px;
@@ -19,7 +19,7 @@ footer {
         flex-direction: row;
         gap: 15px;
         align-items: center;
-
+        color: $color-white;
     }
 
     & .fa-solid {
@@ -34,15 +34,24 @@ footer {
     & img {
         width: 139px;
         height: 27px;
-        @include color-white;
+        color: $color-white;
     }
 
     p.logo2 {
         font-family: Shrikhand;
-        @include color-white;
+        color: $color-white;
         font-size: 18px;
         font-weight: 400;
+    }
 
+    & .return {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+
+        & p {
+            color: $color-white;
+        }
     }
 }
 
@@ -51,7 +60,6 @@ footer {
         display: flex;
         flex-direction: row-reverse;
         align-items: flex-end;
-
         padding: 30px;
 
         & a {
@@ -61,6 +69,11 @@ footer {
 
         & p {
             margin-right: 30px;
+        }
+
+        & .return {
+            flex-direction: row;
+            gap: 7px;
         }
     }
 }

@@ -1,24 +1,25 @@
 .Fonctionnement {
-    @include column;
-    height: auto;
-    margin-bottom: 60px;
-  
-    & h2 {
-      font-family: Roboto;
-      margin-bottom: 0;
-      width: 322px;
-      margin-top: 48px;
-    }
+  @include column;
+  height: auto;
+  margin-bottom: 60px;
+
+  & h2 {
+    font-family: Roboto;
+    margin-bottom: 0;
+    width: 322px;
+    margin-top: 48px;
   }
-  .menu{
-    @include flexMid;
-    flex-direction: row; 
-    flex-wrap: wrap;
-    gap: 25px;
-    margin-left: 28px;
-    margin-top: 31px;
-    
-    &1{
+}
+
+.menu {
+  @include flexMid;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-left: 28px;
+  margin-top: 31px;
+
+  &1 {
     @include row;
     width: 322px;
     height: 72px;
@@ -26,51 +27,50 @@
     background: var(--Background, #F6F6F6);
     justify-content: space-around;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    
-    
-}
+  }
 
-   & h4{
+  & h4 {
     width: 180px;
     font-family: roboto;
-   }
-
+  }
 }
 
-.fa-store:before{
-    color: #9356DC;
+.fa-store:before {
+  color: #9356DC;
 }
-.cercle{
-    margin: 10px;
-    width: 24px;
-    background: #9356DC;
-    height: 24px;
-    text-align: center;
-    border-radius: 25px;
-    color: white;
-    line-height: 25px;
-    margin: -50px;
+
+.cercle {
+  margin: 10px;
+  width: 24px;
+  background: #9356DC;
+  height: 24px;
+  text-align: center;
+  border-radius: 25px;
+  color: white;
+  line-height: 25px;
+  margin: -50px;
 }
+
 @media (min-width: 697px) {
-  .Fonctionnement{
-    & h2{
+  .Fonctionnement {
+    & h2 {
       width: auto;
       margin-left: 20px;
     }
   }
 }
+
 @media (min-width: 1050px) {
-  .Fonctionnement{
-    & h2{
+  .Fonctionnement {
+    & h2 {
       width: 1050px;
       margin-left: 20px;
     }
-    
   }
 }
+
 @media (min-width: 1104px) {
-  .menu{
+  .menu {
     gap: 55px;
-    }
-    
   }
+}

@@ -308,6 +308,7 @@ footer .lien {
   flex-direction: row;
   gap: 15px;
   align-items: center;
+  color: white;
 }
 footer .fa-solid {
   width: 11px;
@@ -326,6 +327,14 @@ footer p.logo2 {
   font-size: 18px;
   font-weight: 400;
 }
+footer .return {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+footer .return p {
+  color: white;
+}
 
 @media screen and (min-width: 1024px) {
   footer {
@@ -340,6 +349,10 @@ footer p.logo2 {
   }
   footer p {
     margin-right: 30px;
+  }
+  footer .return {
+    flex-direction: row;
+    gap: 7px;
   }
 }
 .coeur {
