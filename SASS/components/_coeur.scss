@@ -22,13 +22,13 @@
   }
 
   & i.fa-solid.fa-heart:hover {
-    animation: coeur 3s forwards;
+    animation: coeur 2s forwards;
     transform: scale(1.09);
   }
 }
 
 i.fa-solid.fa-heart:not(:hover) {
-  animation: coeurreverse 3s forwards;
+  animation: coeurreverse 2s forwards;
   transform: scale(1.09);
 }
 
