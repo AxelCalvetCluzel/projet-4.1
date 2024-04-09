@@ -30,6 +30,7 @@
 i.fa-solid.fa-heart:not(:hover) {
   animation: coeurreverse 2s forwards;
   transform: scale(1.09);
+  -webkit-animation: coeurreverse 2s forwards;
 }
 
 
