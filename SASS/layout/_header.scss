@@ -39,14 +39,12 @@ header {
 
 .header {
     padding: 14px 89px 13px 89px;
-    display: flex;
-    justify-content: center;
+    @include flexMid;
 
     &2 {
         width: 100%;
         padding: 14px 0px 13px 0px;
-        display: flex;
-        justify-content: center;
+        @include flexMid;
     }
 }
 

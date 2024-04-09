@@ -1,18 +1,18 @@
 .carte {
-  background: #f6f6f6;
-  border-radius: 40px 40px 0px 0px;
+  background: $carte-background;
+  border-radius: $carte-border-radius;
   @include column;
   gap: 40px;
-  padding-top: 32px;
+  padding-top: $carte-padding-top;
 }
 
 .cardmenu {
   display: flex;
   height: 65px;
   width: 349px;
-  border-radius: 15px;
-  background: var(--White, #fff);
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  border-radius: $cardmenu-borderradius;
+  background: $cardmenu-background;
+  box-shadow: $cardmenu-boxshadows;
   white-space: nowrap;
   align-items: center;
   overflow: hidden;
@@ -22,11 +22,12 @@
 
   & a {
     text-decoration: none;
-    color: black;
+    color: $cardmenu-textcolor;
     display: flex;
     padding: 15px 0px 15px 15px;
     align-items: center;
     text-overflow: ellipsis;
+    font-family: roboto;
   }
 
   & .repas {
@@ -169,9 +170,17 @@
   width: 186px;
   height: 50px;
   border: 0;
-  color: var(--White, #fff);
+  color: $color-white;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 40px;
+
+  &:hover {
+    background: linear-gradient(0deg,
+        rgba(255, 255, 255, 0.15) 15%,
+        rgba(255, 255, 255, 0.15) 100%),
+      linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  }
 }

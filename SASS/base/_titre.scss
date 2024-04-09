@@ -1,9 +1,7 @@
 .titre {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include column;
   height: 287px;
-  background: var(--Background, #f6f6f6);
+  background: $titre-bouton-background;
   font-family: roboto;
 
   & h2 {
@@ -23,15 +21,19 @@
 
   & .bouton {
     border-radius: 25px;
-
-    background: var(--Button-Gradient,
-        linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%));
+    background: linear-gradient($bouton-background-start,
+        $bouton-background-end );
     width: 218px;
     height: 50px;
     border: 0;
-    color: var(--White, #fff);
+    color: $titre-bouton-text-color;
     margin-top: 27px;
     font-size: 16px;
+
+    & a {
+      text-decoration: none;
+      color: inherit;
+    }
   }
 }
 

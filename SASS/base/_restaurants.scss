@@ -1,6 +1,6 @@
 .restaurants {
   @include column;
-  background: var(--Background, #f6f6f6);
+  background: $restaurants-background;
   height: 1226px;
 
   & h2 {
@@ -25,7 +25,7 @@
     }
 
     & h2 {
-      margin: 0px 180px;
+      margin: 30px 180px 0px 180px;
       width: auto;
     }
   }
@@ -78,17 +78,13 @@
     }
 
     & .deuxieme {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
+      @include rowjustify;
       gap: 100px;
       margin: 0px 180px;
     }
 
     & .premier {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
+      @include rowjustify;
       gap: 100px;
       margin: 0px 180px;
     }

@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     transition: opacity 2s ease-in-out;
-    background: linear-gradient(to right, #FF79DA, #9356DC);
+    background: linear-gradient(to right, $loader-background-start, $loader-background-end);
     z-index: 1;
     opacity: 1;
     animation: loader 1s forwards;
@@ -18,19 +18,18 @@
         height: 50px;
         margin: 0 10px;
         animation: chargement infinite 0.5s alternate;
-        font-size: 22px;
-        color: #9356DC;
+        font-size: $loader-icon-size;
+        color: $loader-icon-color-citron;
     }
-
 
     .d2 {
         animation-delay: 0.2s;
-        color: #99E2D0;
+        color: $loader-icon-color-verre;
     }
 
     .d3 {
         animation-delay: 0.4s;
-        color: white;
+        color: $loader-icon-color-oeuf;
     }
 }
 

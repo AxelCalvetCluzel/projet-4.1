@@ -24,7 +24,7 @@
     width: 322px;
     height: 72px;
     border-radius: 20px;
-    background: var(--Background, #F6F6F6);
+    background: $menu-background-color;
     justify-content: space-around;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   }
@@ -36,13 +36,13 @@
 }
 
 .fa-store:before {
-  color: #9356DC;
+  color: $icone-color;
 }
 
 .cercle {
   margin: 10px;
   width: 24px;
-  background: #9356DC;
+  background: $cercle-color;
   height: 24px;
   text-align: center;
   border-radius: 25px;

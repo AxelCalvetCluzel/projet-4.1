@@ -1,1 +1,54 @@
 $color-white : white;
+
+// variable pour la carte
+$carte-background: #f6f6f6;
+$carte-border-radius: 40px 40px 0px 0px;
+$carte-padding-top: 32px;
+
+//  variable pour cardmenu 
+
+$cardmenu-background: white;
+$cardmenu-textcolor: black;
+$cardmenu-borderradius: 15px;
+$cardmenu-boxshadows: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+
+// variable pour le footer 
+
+$footer-background: var(--Grey, #353535);
+$footer-textcolor: white;
+$footer-padding: 22px 25px;
+$footer-link-gap: 7px;
+
+// variable pour les cards 1
+
+$card-border-radius: 15px 15px 0px 0px;
+$card-width: 340px;
+$card-height: 251px;
+$card-badge-width: 80px;
+$card-badge-height: 29px;
+
+// variable pour le loader
+
+$loader-background-start: #FF79DA;
+$loader-background-end: #9356DC;
+$loader-icon-size: 22px;
+$loader-icon-color-citron: #9356DC;
+$loader-icon-color-verre: #99E2D0;
+$loader-icon-color-oeuf: white;
+
+// variable pour le background titre
+
+$titre-bouton-background: #f6f6f6;
+$titre-bouton-text-color: #fff;
+$bouton-background-end: #FF79DA;
+$bouton-background-start: #9356DC;
+
+// variable pour la partie restaurants
+
+$restaurants-background: #f6f6f6;
+
+// variable pour la partie fonctionnement 
+
+$cercle-color: #9356DC;
+$icone-color: #9356DC;
+$menu-background-color: #f6f6f6;

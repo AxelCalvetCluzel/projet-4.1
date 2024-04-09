@@ -1,13 +1,13 @@
 .card1 {
   @include column;
-  border-radius: 15px;
-  width: 340px;
-  height: 251px;
+  border-radius: $card-border-radius;
+  width: $card-width;
+  height: $card-height;
   background: white;
 
   & img {
     width: 100%;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: $card-border-radius;
     height: 189px;
     object-fit: cover;
   }
@@ -17,8 +17,8 @@
   }
 
   & .badge {
-    width: 80px;
-    height: 29px;
+    width: $card-badge-width;
+    height: $card-badge-height;
     background: var(--Green, #99E2D0);
     position: absolute;
     display: flex;
@@ -37,8 +37,7 @@
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
+  @include column1;
   gap: 18px;
 
   & a {
@@ -47,20 +46,17 @@
 }
 
 .deuxieme {
-  display: flex;
-  flex-direction: column;
+  @include column1;
   gap: 18px;
 }
 
 .premier {
-  display: flex;
-  flex-direction: column;
+  @include column1;
   gap: 18px;
 }
 
 .nom {
-  display: flex;
-  flex-direction: column;
+  @include column1;
   width: 100%;
   font-family: roboto;
   color: black;
