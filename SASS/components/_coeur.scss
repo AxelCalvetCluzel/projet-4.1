@@ -1,9 +1,13 @@
 .coeur {
   display: flex;
   flex-direction: column;
-  margin-left: 293px;
+  margin-left: 78%;
   margin-top: 20px;
   position: absolute;
+
+  @media(min-width:704px) {
+    margin-left: 37%;
+  }
 
   & i.fa-regular.fa-heart {
     font-size: 22px;

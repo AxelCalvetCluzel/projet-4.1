@@ -63,6 +63,14 @@
     text-overflow: ellipsis;
     width: 287px;
 
+    @media (min-width: 575px) {
+      width: 438px;
+    }
+
+    @media (min-width: 704px) {
+      width: 502px;
+    }
+
     @media (min-width:1024px) {
       width: 572px;
       text-overflow: ellipsis;
@@ -98,6 +106,14 @@
 
   & svg {
     text-overflow: ellipsis;
+  }
+
+  @media (min-width: 575px) {
+    width: 502px;
+  }
+
+  @media (min-width: 704px) {
+    width: 566px;
   }
 
   @media (min-width:1024px) {
@@ -164,7 +180,6 @@
 
 .bouttonCMD {
   border-radius: 25px;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   background: var(--Button-Gradient,
       linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%));
   width: 186px;

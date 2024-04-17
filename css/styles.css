@@ -22,6 +22,21 @@
   margin-left: 28px;
   margin-top: 31px;
 }
+@media (max-width: 1023.9px) {
+  .menu {
+    width: 75%;
+  }
+}
+@media (max-width: 450px) {
+  .menu {
+    width: 75%;
+  }
+}
+@media (max-width: 449.9px) {
+  .menu {
+    width: 90%;
+  }
+}
 .menu1 {
   display: flex;
   align-items: center;
@@ -31,15 +46,28 @@
   border-radius: 20px;
   background: #f6f6f6;
   justify-content: space-around;
+}
+@media (max-width: 1023.9px) {
+  .menu1 {
+    width: 528px;
+  }
+}
+@media (max-width: 500px) {
+  .menu1 {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.menu1:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
-.menu h4 {
+.menu1:hover .fa-solid {
+  color: #9356DC;
+}
+.menu h3 {
   width: 180px;
   font-family: roboto;
-}
-
-.fa-store:before {
-  color: #9356DC;
+  font-size: 16px;
 }
 
 .cercle {
@@ -52,6 +80,11 @@
   color: white;
   line-height: 25px;
   margin: -50px;
+}
+@media (max-width: 1024px) {
+  .cercle {
+    margin: -18.5%;
+  }
 }
 
 @media (min-width: 697px) {
@@ -96,6 +129,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     margin-bottom: 30px;
+    width: 100%;
   }
   .restaurants h2 {
     margin: 30px 180px 0px 180px;
@@ -113,13 +147,17 @@
   }
   .restaurants .deuxieme {
     display: flex;
+    align-items: center;
     flex-direction: row;
     justify-content: space-around;
+    width: 100%;
   }
   .restaurants .premier {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    width: 100%;
   }
   .restaurants .coeur {
     margin-left: 430px;
@@ -141,14 +179,14 @@
     justify-content: center;
     flex-direction: row;
     gap: 100px;
-    margin: 0px 180px;
+    width: 100%;
   }
   .restaurants .premier {
     display: flex;
     justify-content: center;
     flex-direction: row;
     gap: 100px;
-    margin: 0px 180px;
+    width: 100%;
   }
   .restaurants .coeur {
     margin-left: 430px;
@@ -184,10 +222,10 @@
   color: #fff;
   margin-top: 27px;
   font-size: 16px;
-}
-.titre .bouton a {
   text-decoration: none;
-  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .bouton:hover {
@@ -209,6 +247,7 @@
 }
 .titreresto .coeur {
   margin-top: 0;
+  margin-left: 289px;
 }
 @media (max-width: 374px) {
   .titreresto .coeur {
@@ -272,6 +311,9 @@ header .fa-arrow-left {
 }
 header p {
   font-family: roboto;
+}
+header h1 {
+  margin: 0;
 }
 
 .header {
@@ -365,9 +407,14 @@ footer .return p {
 .coeur {
   display: flex;
   flex-direction: column;
-  margin-left: 293px;
+  margin-left: 78%;
   margin-top: 20px;
   position: absolute;
+}
+@media (min-width: 704px) {
+  .coeur {
+    margin-left: 37%;
+  }
 }
 .coeur i.fa-regular.fa-heart {
   font-size: 22px;
@@ -417,6 +464,16 @@ i.fa-solid.fa-heart:not(:hover) {
   height: 251px;
   background: white;
 }
+@media (max-width: 703.9px) {
+  .card1 {
+    width: 90%;
+  }
+}
+@media (min-width: 704px) {
+  .card1 {
+    width: 100%;
+  }
+}
 .card1 img {
   width: 100%;
   border-radius: 15px 15px 0px 0px;
@@ -429,19 +486,24 @@ i.fa-solid.fa-heart:not(:hover) {
 .card1 .badge {
   width: 80px;
   height: 29px;
-  background: var(--Green, #99E2D0);
+  background: var(--Green, #99e2d0);
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 15px 12px 0px 395px;
+  margin: 15px 12px 0px 70%;
   font-family: Roboto;
   font-size: 14px;
   color: var(--Green-Font, #008766);
 }
-@media (max-width: 1049.5px) {
+@media (min-width: 704px) {
   .card1 .badge {
-    margin: 15px 12px 0px 250px;
+    margin: 15px 12px 0px 33%;
+  }
+}
+@media (min-width: 1089px) {
+  .card1 .badge {
+    margin: 15px 12px 0px 388px;
   }
 }
 
@@ -450,8 +512,22 @@ i.fa-solid.fa-heart:not(:hover) {
   flex-direction: column;
   gap: 18px;
 }
+@media (max-width: 703.9px) {
+  .card {
+    width: 100%;
+  }
+}
 .card a {
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 375px) {
+  .card a {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 .deuxieme {
@@ -459,11 +535,21 @@ i.fa-solid.fa-heart:not(:hover) {
   flex-direction: column;
   gap: 18px;
 }
+@media (min-width: 704px) {
+  .deuxieme {
+    width: 45%;
+  }
+}
 
 .premier {
   display: flex;
   flex-direction: column;
   gap: 18px;
+}
+@media (min-width: 704px) {
+  .premier {
+    width: 45%;
+  }
 }
 
 .nom {
@@ -549,6 +635,16 @@ i.fa-solid.fa-heart:not(:hover) {
   text-overflow: ellipsis;
   width: 287px;
 }
+@media (min-width: 575px) {
+  .cardmenu .description {
+    width: 438px;
+  }
+}
+@media (min-width: 704px) {
+  .cardmenu .description {
+    width: 502px;
+  }
+}
 @media (min-width: 1024px) {
   .cardmenu .description {
     width: 572px;
@@ -581,6 +677,16 @@ i.fa-solid.fa-heart:not(:hover) {
 }
 .cardmenu svg {
   text-overflow: ellipsis;
+}
+@media (min-width: 575px) {
+  .cardmenu {
+    width: 502px;
+  }
+}
+@media (min-width: 704px) {
+  .cardmenu {
+    width: 566px;
+  }
 }
 @media (min-width: 1024px) {
   .cardmenu {
@@ -651,7 +757,6 @@ i.fa-solid.fa-heart:not(:hover) {
 
 .bouttonCMD {
   border-radius: 25px;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   background: var(--Button-Gradient, linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%));
   width: 186px;
   height: 50px;

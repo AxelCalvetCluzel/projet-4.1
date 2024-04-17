@@ -19,6 +19,18 @@
   margin-left: 28px;
   margin-top: 31px;
 
+  @media(max-width:1023.9px) {
+    width: 75%;
+  }
+
+  @media(max-width:450px) {
+    width: 75%;
+  }
+
+  @media(max-width:449.9px) {
+    width: 90%;
+  }
+
   &1 {
     @include row;
     width: 322px;
@@ -26,18 +38,33 @@
     border-radius: 20px;
     background: $menu-background-color;
     justify-content: space-around;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+
+
+    @media(max-width:1023.9px) {
+      width: 528px;
+    }
+
+    @media(max-width:500px) {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &:hover {
+      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+
+      .fa-solid {
+        color: $icone-color;
+      }
+    }
   }
 
-  & h4 {
+  & h3 {
     width: 180px;
     font-family: roboto;
+    font-size: 16px;
   }
 }
 
-.fa-store:before {
-  color: $icone-color;
-}
 
 .cercle {
   margin: 10px;
@@ -49,7 +76,13 @@
   color: white;
   line-height: 25px;
   margin: -50px;
+
+  @media(max-width:1024px) {
+    margin: -18.5%;
+  }
 }
+
+@media(min-width:704px) {}
 
 @media (min-width: 697px) {
   .Fonctionnement {
